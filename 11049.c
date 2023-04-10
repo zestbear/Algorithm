@@ -16,7 +16,15 @@ int main(void){
         if(i>0 && dp[i][0]!=dp[i-1][1]) return 0;
     }
     
-    
+    for(int i=0;i<N;i++){
+        for(int j=0;j<N;j++){
+            if(i!=j){
+                if(dp[i][1]==dp[j][0]){
+                    
+                }
+            }
+        }
+    }
     
     return 0;
 }
