@@ -68,11 +68,14 @@ class Main {
         }
 
         bfs(arr, dist, sx, sy);
+
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                System.out.print(dist[i][j] + " ");
+                sb.append(dist[i][j]).append(" ");
             }
-            System.out.println();
+            sb.append("\n");
         }
+        System.out.print(sb.toString());
     }
 }
